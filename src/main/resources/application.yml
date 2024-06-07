@@ -1,0 +1,10 @@
+server:
+  port: 8080 # 应用程序监听的端口号
+
+spring:
+  datasource: # 数据源配置
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver # MySQL驱动类名，对于MySQL 8以上版本推荐使用这个cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3308/my-template?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8 # 数据库URL
+    username: root # 数据库用户名
+    password: 123456 # 数据库密码
